@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高效计算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 高效计算器</h1>
+        
+        <form id="calcForm" class="calc-form">
+            <div class="input-group">
+                <label for="admin">第一个数字:</label>
+                <input type="number" id="admin" name="admin" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="user">第二个数字:</label>
+                <input type="number" id="user" name="user" required>
+            </div>
+            
+            <button type="submit" class="submit-btn">计算</button>
+        </form>
+
+        <div id="result" class="result-container" style="display: none;">
+            <h2>计算结果</h2>
+            <div id="calculation" class="calculation"></div>
+            <div id="resultValue" class="result-value"></div>
+        </div>
+
+        <div id="error" class="error-container" style="display: none;"></div>
+        
+        <div id="loading" class="loading" style="display: none;">
+            计算中...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
